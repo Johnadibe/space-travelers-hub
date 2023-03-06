@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  margin: 0 2rem;
+  align-items: center;
+}
+
+.left-side {
+  display: flex;
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-header {
+  
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links > li {
+  color: blue;
+}

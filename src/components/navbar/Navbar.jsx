@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 import logoImage from '../../assets/planet.png';
 
 const Navbar = () => {
@@ -27,9 +27,21 @@ const Navbar = () => {
 
       <div className="right-side">
         <ul className="nav-links">
-          <li onClick={handleRocketsPage}>Rockets</li>
-          <li onClick={handleMissionsPage} className="boundary">Missions</li>
-          <li onClick={handleProfilePage}>My Profile</li>
+          <li onClick={handleRocketsPage}>
+            <NavLink to="/">
+              Rockets
+            </NavLink>
+          </li>
+          <li onClick={handleMissionsPage} className="boundary">
+            <NavLink to="/missions">
+              Missions
+            </NavLink>
+          </li>
+          <li onClick={handleProfilePage}>
+            <NavLink to="/profile">
+              My Profile
+            </NavLink>
+          </li>
         </ul>
       </div>
     </section>

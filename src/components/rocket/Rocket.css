@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  margin: 0 2.3rem;
+  margin-top: 1rem;
+  gap: 15px;
+}
+
+.rocket-img {
+  width: 100px;
+  height: 100px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rocket-header {
+
+}
+
+.desc {
+
+}
+
+.reserve-btn {
+  width: 150px;
+  padding: 10px 0;
+  font-size: 16px;
+}

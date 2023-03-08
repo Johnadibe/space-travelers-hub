@@ -32,7 +32,6 @@ const rocketsSlice = createSlice({
         keys.forEach((key) => {
           tempArray.push(payload[key]);
         });
-        console.log(tempArray);
         state.rocketList = [...tempArray];
         state.status = 'loaded';
       });

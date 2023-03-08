@@ -19,7 +19,7 @@ const Rockets = () => {
       <Navbar />
       <section>
         {rocketList.map((item) => (
-          <Rocket key={item.id} />
+          <Rocket key={item.id} {...item} />
         ))}
       </section>
     </div>

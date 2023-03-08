@@ -26,6 +26,9 @@
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "import/no-extraneous-dependencies": "off",
     "no-param-reassign": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "camelcase": "off",
     "no-shadow": "off"
   },
   "ignorePatterns": [

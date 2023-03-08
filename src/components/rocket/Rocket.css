@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  margin: 0 2.3rem;
+  margin-top: 1rem;
+  gap: 15px;
+}
+
+.rocket-img {
+  width: 200px;
+  height: 180px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rocket-header {
+  font-family: 'lato', sans-serif;
+}
+
+.desc {
+  font-family: 'lato', sans-serif;
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
+
+.reserve-btn {
+  width: 150px;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}

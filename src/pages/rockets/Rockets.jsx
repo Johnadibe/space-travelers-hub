@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Navbar from '../../components/navbar/Navbar';
 import Rocket from '../../components/rocket/Rocket';
 import { fetchRockets } from '../../redux/rockets/rocketsSlice';
+import './Rockets.css';
 
 const Rockets = () => {
   const { rocketList, status } = useSelector((store) => store.rockets);
@@ -17,7 +18,7 @@ const Rockets = () => {
   return (
     <div>
       <Navbar />
-      <section>
+      <section className="rockets-container">
         {rocketList.map((item) => (
           <Rocket key={item.id} {...item} />
         ))}

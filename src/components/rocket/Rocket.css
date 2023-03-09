@@ -20,9 +20,19 @@
   font-family: 'lato', sans-serif;
 }
 
+.badge {
+  margin-right: 10px;
+  background-color: #008E97;
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
 .desc {
   font-family: 'lato', sans-serif;
-  line-height: normal;
+  line-height: 1.8rem;
   letter-spacing: 0.5px;
 }
 

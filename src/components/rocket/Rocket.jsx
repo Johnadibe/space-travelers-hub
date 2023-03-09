@@ -28,7 +28,12 @@ const Rocket = ({
 
       <div className="details">
         <h3 className="rocket-header">{name}</h3>
-        <p className="desc">{description}</p>
+        <p className="desc">
+          {reserved && (
+            <span className="badge">Reserved</span>
+          )}
+          {description}
+        </p>
         {!reserved && (
           <button
             type="button"

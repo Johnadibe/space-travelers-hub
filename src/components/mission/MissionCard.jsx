@@ -23,8 +23,6 @@ function MissionCard(props) {
         >
           {reserved ? 'Active Member' : 'Not A MEMBER'}
         </span>
-        {/* <button type="button">Not a Member</button>
-        <button type="button" className="active">Active Member</button> */}
       </td>
       <td className="member-join">
         <button

@@ -32,7 +32,7 @@ tbody .member-block,
 }
 
 tbody .member-block span {
-  width: 100%;
+    display: inline-block;
   background-color: #6b7280;
   color: #fff;
   padding: 5px 10px;

@@ -1,11 +1,14 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinAndLeaveMission } from '../../redux/missions/missionsSlice';
+// import Badge from 'react-bootstrap/Badge';
+// import { joinAndLeaveMission } from '../../redux/missions/missionsSlice';
+// import { Badge } from 'react-bootstrap';
+import { joinMission, leaveMission } from '../../redux/missions/missionsSlice';
 
 function MissionCard(props) {
   const {
-    id, missionName, description,
+    id, missionName, description, reserved,
   } = props;
   const dispatch = useDispatch();
   return (
@@ -15,15 +18,21 @@ function MissionCard(props) {
         {description}
       </td>
       <td className="member-block">
-        <button type="button">Not a Member</button>
-        <button type="button" className="active">Active Member</button>
+        <span
+          className={reserved ? 'active' : 'not-active'}
+        >
+          {reserved ? 'Active Member' : 'Not A MEMBER'}
+        </span>
       </td>
       <td className="member-join">
         <button
           type="button"
-          onClick={() => dispatch(joinAndLeaveMission(id))}
+          className={reserved ? 'outline-danger' : 'outline-secondary'}
+          onClick={reserved ? () => { dispatch(leaveMission(id)); }
+            : () => { dispatch(joinMission(id)); }}
+        //   onClick={() => dispatch(joinAndLeaveMission(id))}
         >
-          Join Mission
+          {reserved ? 'Leave Mission' : 'Join Mission'}
         </button>
       </td>
     </tr>
@@ -34,6 +43,7 @@ MissionCard.propTypes = {
   id: PropTypes.string.isRequired,
   missionName: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  reserved: PropTypes.bool.isRequired,
 };
 
 export default MissionCard;

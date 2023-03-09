@@ -31,18 +31,17 @@ tbody .member-block,
   text-align: center;
 }
 
-tbody .member-block button {
-  width: 100%;
-  background-color: #525252;
+tbody .member-block span {
+  display: inline-block;
+  background-color: #6b7280;
   color: #fff;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
   border: none;
 }
 
 tbody .member-block .active {
-  display: none;
   background-color: #22d3ee;
 }
 
@@ -51,6 +50,11 @@ tbody .member-join button {
   color: #525252;
   padding: 10px;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
+}
+
+tbody .member-join .outline-danger {
+  border: 2px solid red;
+  color: red;
 }

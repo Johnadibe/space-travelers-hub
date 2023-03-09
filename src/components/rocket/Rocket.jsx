@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { bookRocket } from '../../redux/rockets/rocketsSlice';
+import { bookRocket, cancelReservation } from '../../redux/rockets/rocketsSlice';
 import './Rocket.css';
 
 const Rocket = ({
@@ -8,11 +8,16 @@ const Rocket = ({
   name,
   description,
   flickr_images,
+  reserved,
 }) => {
   const dispatch = useDispatch();
 
   const booking = () => {
     dispatch(bookRocket(id));
+  };
+
+  const cancellation = () => {
+    dispatch(cancelReservation(id));
   };
 
   return (
@@ -24,13 +29,25 @@ const Rocket = ({
       <div className="details">
         <h3 className="rocket-header">{name}</h3>
         <p className="desc">{description}</p>
-        <button
-          type="button"
-          className="reserve-btn"
-          onClick={booking}
-        >
-          Reserve Rocket
-        </button>
+        {!reserved && (
+          <button
+            type="button"
+            className="reserve-btn"
+            onClick={booking}
+          >
+            Reserve Rocket
+          </button>
+        )}
+
+        {reserved && (
+          <button
+            type="button"
+            className="cancel-btn"
+            onClick={cancellation}
+          >
+            Cancel Reservation
+          </button>
+        )}
       </div>
     </section>
   );

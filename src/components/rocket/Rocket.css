@@ -43,3 +43,21 @@
   color: #fff;
   cursor: pointer;
 }
+
+.cancel-btn {
+  width: 200px;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #a9a9a9;
+  cursor: pointer;
+}

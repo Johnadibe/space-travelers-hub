@@ -37,6 +37,7 @@ const rocketsSlice = createSlice({
         }
         return { ...rocket, reserved: false };
       });
+      state.rocketList = [...reservedRocket];
     },
   },
   extraReducers(builder) {

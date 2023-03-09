@@ -34,9 +34,11 @@ const Missions = () => {
   } else if (missionStatus === 'succeeded') {
     content = missions.map((mission) => (
       <MissionCard
-        key={mission.mission_id}
-        missionName={mission.mission_name}
+        key={mission.id}
+        id={mission.id}
+        missionName={mission.missionName}
         description={mission.description}
+        reserved={mission.reserved}
       />
     ));
   } else if (missionStatus === 'failed') {

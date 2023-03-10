@@ -100,7 +100,7 @@ You can deploy this project using:
 
 - GitHub: [@Johnadibe](https://github.com/Johnadibe)
 - Twitter: [@JohnAdibe2](https://twitter.com/JohnAdibe2)
-- LinkedIn: [@John Adibe](https://www.linkedin.com/in/john-adibe-400b36166/)
+- LinkedIn: [@John Adibe](https://www.linkedin.com/in/john-adibe/)
 
 👤 **Mark Fenekayas**
 

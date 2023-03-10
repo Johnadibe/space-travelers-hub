@@ -1,23 +1,9 @@
 import React from 'react';
 import './Navbar.css';
-import { useNavigate, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logoImage from '../../assets/planet.png';
 
 const Navbar = () => {
-  const navigation = useNavigate();
-
-  const handleRocketsPage = () => {
-    navigation('/');
-  };
-
-  const handleMissionsPage = () => {
-    navigation('/missions');
-  };
-
-  const handleProfilePage = () => {
-    navigation('/profile');
-  };
-
   return (
     <section className="navbar">
       <div className="left-side">
@@ -27,17 +13,17 @@ const Navbar = () => {
 
       <div className="right-side">
         <ul className="nav-links">
-          <li onClick={handleRocketsPage}>
+          <li>
             <NavLink to="/">
               Rockets
             </NavLink>
           </li>
-          <li onClick={handleMissionsPage} className="boundary">
+          <li className="boundary">
             <NavLink to="/missions">
               Missions
             </NavLink>
           </li>
-          <li onClick={handleProfilePage}>
+          <li>
             <NavLink to="/profile">
               My Profile
             </NavLink>

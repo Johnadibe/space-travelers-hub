@@ -29,6 +29,7 @@
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
     "camelcase": "off",
+    "react/jsx-key": "off",
     "no-shadow": "off"
   },
   "ignorePatterns": [

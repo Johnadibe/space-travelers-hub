@@ -1,12 +1,22 @@
 import React from 'react';
-import ProfileCard from './profileCard';
+import Navbar from '../../components/navbar/Navbar';
+import ProfileCard from '../../components/profileCard/ProfileCard';
+import RocketsProfile from '../../components/rocketsProfile/RocketsProfile';
 import './profile.css';
 
 const Profile = () => {
   return (
-    <div>
-      <ProfileCard />
-    </div>
+    <section>
+      <Navbar />
+      <div className="profile-container">
+        <div className="card">
+          <ProfileCard />
+        </div>
+        <div className="card">
+          <RocketsProfile />
+        </div>
+      </div>
+    </section>
   );
 };
 

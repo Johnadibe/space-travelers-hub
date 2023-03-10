@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectAllMissions } from '../../redux/missions/missionsSlice';
-import Navbar from '../../components/navbar/Navbar';
+import './ProfileCard.css';
 
 const ProfileCard = () => {
   const missions = useSelector(selectAllMissions);
@@ -9,7 +9,6 @@ const ProfileCard = () => {
   if (joinedMissions.length === 0) {
     return (
       <div>
-        <Navbar />
         <div className="row">
           <p className="text-muted">No joined missions</p>
         </div>
@@ -18,17 +17,14 @@ const ProfileCard = () => {
   }
 
   return (
-    <div>
-      <Navbar />
-      <div className="profile-section">
-        <h2>My Missions</h2>
-        <div className="name-mission">
-          {joinedMissions.map((mission) => (
-            <div className="row" key={mission.id}>
-              <p>{mission.missionName}</p>
-            </div>
-          ))}
-        </div>
+    <div className="profile-section">
+      <h2>My Missions</h2>
+      <div className="name-mission">
+        {joinedMissions.map((mission) => (
+          <div className="row" key={mission.id}>
+            <p>{mission.missionName}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  margin: 0 2.3rem;
+  margin-top: 1rem;
+  gap: 15px;
+}
+
+.rocket-img {
+  width: 200px;
+  height: 180px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rocket-header {
+  font-family: 'lato', sans-serif;
+}
+
+.badge {
+  margin-right: 10px;
+  background-color: #008e97;
+  padding: 3px 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.desc {
+  font-family: 'lato', sans-serif;
+  line-height: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+.reserve-btn {
+  width: 150px;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #0290ff;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  width: 200px;
+  padding: 10px 0;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #a9a9a9;
+  cursor: pointer;
+}

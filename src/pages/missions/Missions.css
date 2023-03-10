@@ -1,0 +1,60 @@
+table {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid #d8d8d7;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.mission_name {
+  display: inline-block;
+  border: none;
+}
+
+tbody .member-block,
+.member-join {
+  width: 10%;
+  text-align: center;
+}
+
+tbody .member-block span {
+  display: inline-block;
+  background-color: #6b7280;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  border: none;
+}
+
+tbody .member-block .active {
+  background-color: #22d3ee;
+}
+
+tbody .member-join button {
+  border: 1px solid #525252;
+  color: #525252;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+tbody .member-join .outline-danger {
+  border: 2px solid red;
+  color: red;
+}

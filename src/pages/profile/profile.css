@@ -1,0 +1,10 @@
+.profile-container {
+  display: flex;
+  gap: 3rem;
+  margin: 0 2rem;
+  justify-content: center;
+}
+
+.card {
+  width: 40%;
+}

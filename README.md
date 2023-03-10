@@ -1,8 +1,6 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Exotic Rentals ](#-exotic-rentals--)
-  - [Backend](#backend)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -12,7 +10,6 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
     - [Deployment](#deployment)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
@@ -23,7 +20,7 @@
 
 # 📖 Space Travelers' Hub <a name="about-project"></a>
 
-**space travelers' hub** The Bookstore is a website where the user can display a list of books, add a book by providing a title, an author, and selecting from the categories, and remove a selected book.
+**space travelers' hub** is a web application whose aim is to facilitate a company that provides commercial and scientific space travel services. The application gets real live data from the SpaceX API. It allows users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -41,15 +38,15 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Display a list of books.]**
-- **[Add a book.]**
-- **[Remove a selected book.]**
+- **[Reserve/cancel reservations for rockets.]**
+- **[Join/leave space missions.]**
+- **[View reserved rockets and joined space missions.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- No Live Demo Link
+- Coming Soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +94,7 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="author"></a>
 
 👤 **John Adibe**
 
@@ -105,13 +102,19 @@ You can deploy this project using:
 - Twitter: [@JohnAdibe2](https://twitter.com/JohnAdibe2)
 - LinkedIn: [@John Adibe](https://www.linkedin.com/in/john-adibe-400b36166/)
 
+👤 **Mark Fenekayas**
+
+- GitHub: [@Fene-87](https://github.com/Fene-87)
+- Twitter: [@markfen4](https://twitter.com/markfen4)
+- LinkedIn: [@Mark Fenekayas](https://www.linkedin.com/in/mark-fenekayas/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Display a list of books.]**
-- [ ] **[Add a book.]**
-- [ ] **[Remove a selected book.]**
+- [ ] **[View more rockets.]**
+- [ ] **[View more missions.]**
+- [ ] **[Implement virtual tours.]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

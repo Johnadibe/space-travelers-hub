@@ -1,11 +1,14 @@
 import React from 'react';
 import Navbar from '../../components/navbar/Navbar';
+import RocketsProfile from '../../components/rocketsProfile/RocketsProfile';
 
 const Profile = () => {
   return (
     <div>
       <Navbar />
-      <div>Profile</div>
+      <section>
+        <RocketsProfile />
+      </section>
     </div>
   );
 };

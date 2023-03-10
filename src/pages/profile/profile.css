@@ -1,7 +1,12 @@
+.profile-container {
+  display: flex;
+  border: 1px solid red;
+}
+
 .profile-section {
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  width: 40%;
   margin: 100px 0 0 50px;
 }
 
@@ -28,4 +33,8 @@
   font-weight: bolder;
   text-align: center;
   margin-top: 25px;
+}
+
+.profile-container > RocketsProfile {
+  width: 40%;
 }

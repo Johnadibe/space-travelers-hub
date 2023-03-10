@@ -8,6 +8,16 @@ const RocketsProfile = () => {
     return rocket.reserved;
   });
 
+  if (reservedRockets.length === 0) {
+    return (
+      <div>
+        <div className="row">
+          <p className="text-muted">No Reserved Rockets</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="rockets-container">
       <h2 className="rockets-header">My Rockets</h2>

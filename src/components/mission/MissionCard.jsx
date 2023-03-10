@@ -1,9 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useDispatch } from 'react-redux';
-// import Badge from 'react-bootstrap/Badge';
-// import { joinAndLeaveMission } from '../../redux/missions/missionsSlice';
-// import { Badge } from 'react-bootstrap';
 import { joinMission, leaveMission } from '../../redux/missions/missionsSlice';
 
 function MissionCard(props) {
@@ -30,7 +27,6 @@ function MissionCard(props) {
           className={reserved ? 'outline-danger' : 'outline-secondary'}
           onClick={reserved ? () => { dispatch(leaveMission(id)); }
             : () => { dispatch(joinMission(id)); }}
-        //   onClick={() => dispatch(joinAndLeaveMission(id))}
         >
           {reserved ? 'Leave Mission' : 'Join Mission'}
         </button>

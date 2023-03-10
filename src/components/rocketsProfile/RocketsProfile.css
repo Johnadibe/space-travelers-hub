@@ -1,0 +1,16 @@
+.rockets-container {
+  margin-top: 4rem;
+}
+
+.rockets-header {
+  margin-top: 1rem;
+}
+
+.rockets-list {
+  margin-top: 0.5rem;
+  border: 1px solid #d3d3d3;
+}
+
+.rockets-list > li {
+  padding: 10px 20px;
+}

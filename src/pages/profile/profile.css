@@ -1,0 +1,31 @@
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  margin: 100px 0 0 50px;
+}
+
+.name-mission {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #d3d3d3;
+  border-bottom: none;
+  margin-top: 10px;
+}
+
+.row {
+  border-bottom: 2px solid #d3d3d3;
+  padding: 20px 15px;
+}
+
+.row p {
+  font-size: 18px;
+}
+
+.row .text-muted {
+  font-size: 25px;
+  color: red;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 25px;
+}

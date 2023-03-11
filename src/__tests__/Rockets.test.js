@@ -5,14 +5,14 @@ import store from '../redux/store/store';
 import Rockets from '../pages/rockets/Rockets';
 
 describe('testing snapshot with Rockets', () => {
-    it('testing Rockets component', () => {
-        const rockets = render(
-        <Provider store={store}>
-            <BrowserRouter>
-            <Rockets />
-            </BrowserRouter>
-        </Provider>,
-        );
-        expect(rockets).toMatchSnapshot();
-    });
+  it('testing Rockets component', () => {
+    const rockets = render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <Rockets />
+        </BrowserRouter>
+      </Provider>,
+    );
+    expect(rockets).toMatchSnapshot();
+  });
 });

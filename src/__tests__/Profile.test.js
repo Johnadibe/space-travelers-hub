@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/store/store';
-import Profile from '../pages/profile/profile';
+import Profile from '../pages/profile/Profile';
 import ProfileCard from '../components/profileCard/ProfileCard';
 import RocketsProfile from '../components/rocketsProfile/RocketsProfile';
 
